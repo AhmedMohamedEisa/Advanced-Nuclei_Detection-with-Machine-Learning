@@ -1,0 +1,35 @@
+Project Architecture
+Overview
+This project utilizes a U-Net convolutional neural network architecture for the segmentation of cell nuclei from histopathological images. The system is designed to process images, detect nuclei boundaries, and segment them with high precision.
+
+Components
+The project is composed of several key components:
+
+Data Preprocessing Module
+Normalization: Standardizes the pixel values across all images.
+Augmentation: Enhances the dataset with altered versions of images to improve model robustness.
+U-Net Model
+Input Layer: Accepts preprocessed images.
+Downsampling Path: Captures features and context.
+Bottleneck: Processes the most abstracted features.
+Upsampling Path: Recovers spatial information for precise localization.
+Output Layer: Produces the segmentation map of nuclei.
+Training Pipeline
+Loss Functions: Utilizes a combination of binary cross-entropy and Dice similarity coefficient for training.
+Optimization Algorithm: Employs Adam optimizer for adjusting weights.
+Evaluation Framework
+Metrics: Accuracy, Precision, Recall, F1-Score, and Intersection over Union (IoU) for performance assessment.
+Validation Set: A subset of the data used to tune model parameters and prevent overfitting.
+Post-processing
+Thresholding: Converts the probability maps to binary masks.
+Labeling: Identifies and labels individual nuclei.
+Workflow
+Raw images are loaded and preprocessed.
+The U-Net model processes the images through its layers.
+Post-processing is applied to the model's output.
+Evaluation metrics are calculated.
+Directory Structure
+/src: Contains the source code for the model and utilities.
+/data: Holds the dataset and preprocessing scripts.
+/models: Stores the trained models and weights.
+/notebooks: Jupyter notebooks for demonstration and testing.
