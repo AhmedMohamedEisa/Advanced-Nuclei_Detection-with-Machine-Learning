@@ -1,0 +1,17 @@
+Data Directory Structure
+We have organized the data into separate directories within the data/ folder of this repository:
+
+/data/raw/: Contains the original, unprocessed image files.
+/data/processed/: Stores images after preprocessing steps like normalization and augmentation.
+Obtaining the Data
+The dataset for nuclei detection is sourced from the 2018 Data Science Bowl on Kaggle. Due to the size of the dataset, it is not included directly in this repository.
+
+Instructions for Accessing the Dataset:
+Visit the Kaggle Data Science Bowl 2018 competition page.
+Join the competition to gain access to the dataset.
+Download the dataset onto your local machine.
+Preparing the Data
+Before using the data for training the model, perform the following preprocessing steps:
+
+Run the normalization script to standardize image intensities: python scripts/normalize.py.
+Execute the augmentation script to enhance the dataset: python scripts/augment.py.
