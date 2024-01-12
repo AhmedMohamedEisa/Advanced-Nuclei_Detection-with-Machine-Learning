@@ -1,0 +1,24 @@
+Algorithms Used
+U-Net Convolutional Neural Network
+Overview
+The U-Net architecture is a powerful convolutional neural network specifically designed for biomedical image segmentation tasks. It is characterized by its unique structure, which includes a contracting path to capture context and an expansive path that enables precise localization.
+
+Core Components
+Convolutional Layers: Utilize kernels to extract feature maps from images.
+Activation Function (ReLU): Introduces non-linearity to the learning process.
+Pooling Layers: Reduce dimensionality and retain important features.
+Upconvolution (Transposed Convolution): Expands the feature maps to enable precise segmentation.
+Special Features
+Skip Connections: Combine features from different layers to preserve spatial context.
+Data Augmentation: Mitigate overfitting and improve model generalizability by artificially expanding the dataset.
+Training Algorithm
+Loss Function
+Binary Cross-Entropy: Measures the pixel-wise difference between the predicted segmentation and the ground truth.
+Dice Coefficient: Quantifies the overlap between the predicted segmentation and the ground truth.
+Optimization
+Adam Optimizer: An adaptive learning rate optimization algorithm designed for training deep neural networks efficiently.
+Post-processing Techniques
+Thresholding
+Converts the model's probabilistic output into a binary image, separating nuclei from the background.
+Morphological Operations
+Cleans up the segmentation result, refining the shapes of detected nuclei and separating touching objects.
