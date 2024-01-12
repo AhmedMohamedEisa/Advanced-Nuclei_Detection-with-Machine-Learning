@@ -1,0 +1,20 @@
+Project Scope
+The project focuses on automated nuclei detection using machine learning, aiming to improve precision and efficiency in biomedical image analysis.
+
+Algorithm Selection
+We chose the U-Net architecture for its success in medical image segmentation tasks, leveraging its symmetrical structure for accurate nuclei detection.
+
+Data Handling
+Data preprocessing was designed to maximize model performance, including normalization and augmentation to address variability in histopathological images.
+
+Model Complexity
+We balanced the model's complexity to optimize for both accuracy and computational efficiency, ensuring it could be deployed in diverse environments.
+
+Performance Metrics
+Selection of metrics like F1-score and IoU was based on their relevance to segmentation tasks, providing a comprehensive evaluation of model accuracy.
+
+Post-processing
+Post-processing steps, including thresholding and morphological operations, were designed to refine the segmentation output from the U-Net model.
+
+Software and Tools
+We opted for Python, TensorFlow, and Keras for their robustness, extensive libraries, and community support in machine learning development.
